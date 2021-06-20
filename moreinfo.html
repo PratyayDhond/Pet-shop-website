@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            body{
+                background-image: url(bg.jpg);
+            }
+        }
+
+    </style>
+</head>
+<body class="background">  
+    
+    <div>
+        <button class="button" onclick="document.location='index.html'">Home</button><br>
+        <button class="button" onclick="document.location='pets.html'">Dogs</button> <br>
+        
+
+    </div>   
+    
+    <div>
+        <!--This is the Review system-->
+        <!--The below tag is used to get userInput-->
+        <input type="number" placeholder="Rate our services between 1 to 5" max="5" min="1" id="review1" ><br>
+        <p class="review1p">Provide us with a review to make our services better <br></p>
+        <!--On clicking on the button the function rating present in script.js is run-->
+        <button class="review1b" onclick="rating()" >Submit</button> <br>
+        <!--The below paragraph outputs the reply to the input using JavaScript.-->
+        <p id="systemResponse" ></p>
+    </div>  
+    
+    <div>
+        <!--This is the First Comment-->
+        <h3 id="comment1name">Levi Ackerman (27 M): </h3>
+        <h3 id="comment1rating">Rating:</h3>
+        <img src="white.png" alt="" id="comment1background">
+        <p id="comment1para">Loved the service. It was really good and the delivery was Swift. <br> Loved the idea of online shopping of Pet supplies and Pets! <br> Will buy in future too! Great Service!</p>
+        <img src="5star.png" alt="" id="comment1star">
+    </div>
+
+    <div>
+        <!--This is the Second Comment-->
+        <img src="white.png" alt="" id="comment2background">
+        <h3 id="comment2name">Hannah Langford (21 F) :</h3>
+        <h3 id="comment2rating">Rating:</h3>
+        <p id="comment2para"> Good service, Nice customer support but limited to chat only. <br> Would love to see customer care more advanced.</p>
+        <img src="4star.png" alt="" id="comment2star">
+    </div>
+
+    <div>
+        <!--This is the 'Why Us?'' Section-->
+        <h2 id="infositeh2">Why Buy From Us?</h2> 
+        <p id="infositep"> Best Prices! <br> Best Service! <br> Swift Delivery! <br></p>
+        
+    </div>
+      
+    <script src="script.js"></script>
+
+</body>
+</html>
