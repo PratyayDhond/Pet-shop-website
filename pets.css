@@ -1,0 +1,16 @@
+body{
+    background: url('./bg3.jpg') fixed;
+    background-size: cover;
+}
+
+.card {
+    height: 20rem;
+    /* Set a fixed height for the cards */
+    overflow-y: auto;
+    /* Add vertical scrollbar if content overflows */
+}
+
+.card-body {
+    max-height: 100%;
+    /* Allow the card body to take up 100% of the card height */
+}

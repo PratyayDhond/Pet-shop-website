@@ -1,5 +1,6 @@
 .background1{
     background-image:url('img.png');
+    background-size: cover;
 }
 
 .button {
@@ -325,12 +326,7 @@ body{
     top: 15%;
 }
 
-.bgpet{
-    background-image: url(bg3.jpg);
-    height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 
 .dogImgOne{
     height: 350px;
