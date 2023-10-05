@@ -12,10 +12,10 @@ Fork the Repository: Click the "Fork" button at the top right corner of this rep
 
 Clone Your Fork: Clone the repository to your local machine using git clone.
 
-
 ```
 git clone https://github.com/PratyayDhond/Pet-shop-website.git
 ```
+
 Create a Branch: Create a new branch for your contribution. Use a descriptive branch name that reflects the nature of your changes.
 
 ```
@@ -31,6 +31,7 @@ git commit -m "Add a new feature: XYZ"
 ```
 
 Push Your Changes: Push your changes to your fork on GitHub.
+
 ```
 git push origin feature/your-feature
 ```
