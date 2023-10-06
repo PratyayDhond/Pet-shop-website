@@ -14,6 +14,12 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./cssLib/one.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./about.css" />
     <title>Pet Store | About</title>
   </head>
   <body>
@@ -49,6 +55,236 @@
         </div>
       </div>
     </nav>
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-md-12">
+            <div class="wrapper">
+              <div class="row no-gutters">
+                <div class="col-md-7 d-flex align-items-stretch">
+                  <div class="contact-wrap w-100 p-md-5 p-4">
+                    <h3 class="mb-4">Get in touch</h3>
+                    <div id="form-message-warning" class="mb-4"></div>
+                    <div id="form-message-success" class="mb-4">
+                      Your message was sent, thank you!
+                    </div>
+                    <form method="POST" id="contactForm" name="contactForm">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="name"
+                              id="name"
+                              placeholder="Name"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input
+                              type="email"
+                              class="form-control"
+                              name="email"
+                              id="email"
+                              placeholder="Email"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="subject"
+                              id="subject"
+                              placeholder="Subject"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <textarea
+                              name="message"
+                              class="form-control"
+                              id="message"
+                              cols="30"
+                              rows="7"
+                              placeholder="Message"
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                              type="submit"
+                              value="Send Message"
+                              class="btn btn-primary"
+                            />
+                            <div class="submitting"></div>
+                            <div
+                              class="accordion accordion-flush"
+                              id="accordionFlushExample"
+                            >
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="flush-collapseOne"
+                                  >
+                                    What do we do?
+                                  </button>
+                                </h2>
+                                <div
+                                  id="flush-collapseOne"
+                                  class="accordion-collapse collapse"
+                                  data-bs-parent="#accordionFlushExample"
+                                >
+                                  <div class="accordion-body">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Dolore, assumenda
+                                    consequuntur. Aliquid consequatur, debitis
+                                    tempore deserunt placeat eligendi corrupti
+                                    facere!
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="flush-collapseTwo"
+                                  >
+                                    Do we have stores?
+                                  </button>
+                                </h2>
+                                <div
+                                  id="flush-collapseTwo"
+                                  class="accordion-collapse collapse"
+                                  data-bs-parent="#accordionFlushExample"
+                                >
+                                  <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Hic nesciunt veniam
+                                    veritatis facere a numquam tenetur iste.
+                                    Eius, blanditiis asperiores!
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false"
+                                    aria-controls="flush-collapseThree"
+                                  >
+                                    What about delivery charges?
+                                  </button>
+                                </h2>
+                                <div
+                                  id="flush-collapseThree"
+                                  class="accordion-collapse collapse"
+                                  data-bs-parent="#accordionFlushExample"
+                                >
+                                  <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Sint officiis ab eos
+                                    aperiam dolore, officia magnam amet porro
+                                    sunt cumque.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-5 d-flex align-items-stretch">
+                  <div class="info-wrap bg-primary w-100 p-lg-5 p-4">
+                    <h3 class="mb-4 mt-md-4">Contact us</h3>
+                    <div class="dbox w-100 d-flex align-items-start">
+                      <div
+                        class="icon d-flex align-items-center justify-content-center"
+                      >
+                        <span class="fa fa-map-marker"></span>
+                      </div>
+                      <div class="text pl-3">
+                        <p>
+                          <span>Address:</span> Lorem ipsum dolor sit amet
+                          consectetur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="dbox w-100 d-flex align-items-center">
+                      <div
+                        class="icon d-flex align-items-center justify-content-center"
+                      >
+                        <span class="fa fa-phone"></span>
+                      </div>
+                      <div class="text pl-3">
+                        <p>
+                          <span>Phone:</span>
+                          <a href="tel://1234567920">+ 1235 2355 98</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="dbox w-100 d-flex align-items-center">
+                      <div
+                        class="icon d-flex align-items-center justify-content-center"
+                      >
+                        <span class="fa fa-paper-plane"></span>
+                      </div>
+                      <div class="text pl-3">
+                        <p>
+                          <span>Email:</span>
+                          <a href="mailto:info@yoursite.com"
+                            >info@yoursite.com</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div class="dbox w-100 d-flex align-items-center">
+                      <div
+                        class="icon d-flex align-items-center justify-content-center"
+                      >
+                        <span class="fa fa-globe"></span>
+                      </div>
+                      <div class="text pl-3">
+                        <p><span>Website</span> <a href="#">yoursite.com</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
     <script>
       // Enable Bootstrap Navbar functionality
       var navbarToggler = document.querySelector(".navbar-toggler");
