@@ -1,15 +1,3 @@
-// Enable Bootstrap Navbar functionality
-var navbarToggler = document.querySelector(".navbar-toggler");
-navbarToggler.addEventListener("click", function () {
-  var target = document.querySelector(
-    navbarToggler.getAttribute("data-bs-target")
-  );
-  if (target.classList.contains("show")) {
-    target.classList.remove("show");
-  } else {
-    target.classList.add("show");
-  }
-});
 var buff = document.getElementById("pets");
 
 //for future upgrades, just store the database fetch results in this array to get all the cards
