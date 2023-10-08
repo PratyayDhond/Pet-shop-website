@@ -56,8 +56,8 @@ buff1.forEach((ele) => {
                       Purchase
                     </button>
                     <button
-                      class="btn btn-primary mb-2"
-                      id="add-to-cart"
+                      class="btn btn-primary mb-2 add-to-cart"
+id="liveToastBtn"
                     >
                       Add To Cart
                     </button>
@@ -93,3 +93,67 @@ let cart = [
 
 let c = document.getElementById("item-count");
 c.textContent = cart.length;
+// Select all elements with class "add-to-cart"
+const addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+// Array to store cart items
+
+// Function to handle "Add To Cart" button click
+function addToCartClicked(event) {
+  // Get the clicked item's index from the data-index attribute
+  const itemIndex = event.target.dataset.index;
+
+  // Add the clicked item to the cart array
+  cart.push(buff1[itemIndex]);
+
+  // Update the cart count
+  updateCartCount();
+
+  // Optional: Provide user feedback that the item has been added to the cart
+  // alert(`${buff1[itemIndex].name} has been added to your cart!`);
+}
+
+// Function to update the cart count
+function updateCartCount() {
+  let c = document.getElementById("item-count");
+  c.textContent = cart.length;
+}
+
+// Add click event listener to each "Add To Cart" button
+addToCartButtons.forEach((button, index) => {
+  button.addEventListener("click", (event) => {
+    // Call addToCartClicked function when button is clicked
+    addToCartClicked(event);
+
+    // Prevent the default behavior of the button click
+    event.preventDefault();
+  });
+
+  // Add data-index attribute to store the index of the corresponding product
+  button.dataset.index = index;
+});
+let m = document.getElementById("cart-modal");
+cart.forEach((ele) => {
+  const card1 = document.createElement("div");
+  card1.className = "card mb-3";
+  card1.innerHTML = `   <img src="${ele.img}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">${ele.name}</h5>
+    <p class="card-text"><strong>Group:</strong>${ele.group}</p>
+    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+  </div>
+      `;
+  // add the card to the container
+  m.appendChild(card1);
+});
+
+//toast
+const toastTrigger = document.getElementById("liveToastBtn");
+const toastLiveExample = document.getElementById("liveToast");
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+  toastTrigger.addEventListener("click", () => {
+    toastBootstrap.show();
+  });
+}
