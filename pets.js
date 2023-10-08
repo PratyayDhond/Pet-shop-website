@@ -39,7 +39,6 @@ let buff1 = [
     price: "39999/-",
   },
 ];
-
 buff1.forEach((ele) => {
   const card = document.createElement("div");
   card.className = "col-lg-6";
@@ -58,7 +57,7 @@ buff1.forEach((ele) => {
                     </button>
                     <button
                       class="btn btn-primary mb-2"
-                      onclick="document.location='404.html'"
+                      
                     >
                       Add To Cart
                     </button>
@@ -80,3 +79,26 @@ buff1.forEach((ele) => {
   // add the card to the container
   buff.appendChild(card);
 });
+let cart = [
+  {
+    img: "bullDog.jpg",
+    name: "Bull Dog",
+    height: "14-15 inches",
+    weight: " 50 pounds (male), 40 pounds (female)",
+    lifeExpectancy: "8-10 years",
+    group: " Non-Sporting Group",
+    price: "57999/-",
+  },
+];
+// const addToCartButton = card.querySelector(".btn-add-to-cart");
+
+// // Add click event listener to the "Add To Cart" button
+// addToCartButton.addEventListener("click", () => {
+//   // Push the selected item to the cart array
+//   cart.push(ele);
+
+//   // Optional: Provide user feedback (e.g., alert, toast, etc.) that the item has been added to the cart
+//   alert(`${ele.name} has been added to your cart!`);
+// });
+// let c = document.getElementsByClassName("cart-count");
+// c.textContent = cart.length;
