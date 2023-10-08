@@ -19,6 +19,38 @@
     <title>Pet Store | Dogs</title>
   </head>
   <body>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Your Cart</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="cart-modal"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
         <h1 class="navbar-brand">Dogs</h1>
@@ -51,180 +83,51 @@
         </div>
       </div>
     </nav>
+    <div
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+      style="z-index: 100"
+      class="cart-icon"
+    >
+      <span class="cart-count" id="item-count">0</span>
+      <img src="shopping-cart.png" alt="Cart Icon" />
+    </div>
 
     <div class="container" style="margin-top: 5rem">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="card my-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="card-header text-center">Bull Dog</div>
-              <div class="card-body d-flex justify-content-around">
-                <div class="col-5">
-                  <img
-                    src="bullDog.jpg"
-                    class="img-fluid"
-                    alt="Bull Dog"
-                  />
-                  <div class="my-3 d-flex justify-content-around flex-wrap">
-                    <button
-                      class="btn btn-primary mb-2"
-                      onclick="document.location='404.html'"
-                    >
-                      Purchase
-                    </button>
-                    <button
-                      class="btn btn-primary mb-2"
-                      onclick="document.location='404.html'"
-                    >
-                      Add To Cart
-                    </button>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <p class="card-text">
-                    <strong>Height:</strong> 14-15 inches<br />
-                    <strong>Weight:</strong> 50 pounds (male), 40 pounds (female)<br />
-                    <strong>Life Expectancy:</strong> 8-10 years<br />
-                    <strong>Group:</strong> Non-Sporting Group<br />
-                    <strong>Price:</strong> 57999/-
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="row" id="pets"></div>
+    </div>
+    <div class="toast-container position-fixed top-0 start-0 p-3">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <!-- <img src="..." class="rounded me-2" alt="..." /> -->
+          <strong class="me-auto">Check your Cart!</strong>
+
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
         </div>
-        <div class="col-lg-6">
-          <div class="card my-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="card-header text-center">German Shepherd</div>
-              <div class="card-body d-flex justify-content-around">
-                <div class="col-5">
-                  <img
-                    src="germanShepard.jpg"
-                    class="img-fluid"
-                    alt="German Shepherd"
-                  />
-                  <div class="my-3 d-flex justify-content-around flex-wrap">
-                    <button
-                      class="btn btn-primary mb-2"
-                      onclick="document.location='404.html'"
-                    >
-                      Purchase
-                    </button>
-                    <button
-                      class="btn btn-primary mb-2"
-                      onclick="document.location='404.html'"
-                    >
-                      Add To Cart
-                    </button>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <p class="card-text">
-                    <strong>Height:</strong> 24-26 inches (male), 22-24 inches (female)<br />
-                    <strong>Weight:</strong> 65-90 pounds (male), 50-70 pounds (female)<br />
-                    <strong>Life Expectancy:</strong> 7-10 years<br />
-                    <strong>Group:</strong> Herding Group<br />
-                    <strong>Price:</strong> 49999/-
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="card my-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="card-header text-center">Golden Retriever</div>
-              <div class="card-body d-flex justify-content-around">
-                <div class="col-5">
-                  <img
-                    src="golden-retriever.jpg"
-                    class="img-fluid"
-                    alt="Golden Retriever"
-                  />
-                  <div class="my-3 d-flex justify-content-around flex-wrap">
-                    <button
-                      class="btn btn-primary mb-2"
-                      onclick="document.location='404.html'"
-                    >
-                      Purchase
-                    </button>
-                    <button
-                      class="btn btn-primary mb-2"
-                      onclick="document.location='404.html'"
-                    >
-                      Add To Cart
-                    </button>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <p class="card-text">
-                    <strong>Height:</strong> 21-22 inches (male), 19-21 inches (female)<br />
-                    <strong>Weight:</strong> 58-63 pounds (male), 55-60 pounds (female)<br />
-                    <strong>Life Expectancy:</strong> 10-12 years<br />
-                    <strong>Group:</strong> Sporting Group<br />
-                    <strong>Price:</strong> 59999/-
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="card my-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="card-header text-center">Beagle</div>
-              <div class="card-body d-flex justify-content-around">
-                <div class="col-5">
-                  <img
-                    src="beagle.jpeg"
-                    class="img-fluid"
-                    alt="Beagle"
-                  />
-                  <div class="my-3 d-flex justify-content-around flex-wrap">
-                    <button
-                      class="btn btn-primary mb-2"
-                      onclick="document.location='404.html'"
-                    >
-                      Purchase
-                    </button>
-                    <button
-                      class="btn btn-primary mb-2"
-                      onclick="document.location='404.html'"
-                    >
-                      Add To Cart
-                    </button>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <p class="card-text">
-                    <strong>Height:</strong> 19-22 inches (male), 17-20 inches (female)<br />
-                    <strong>Weight:</strong> 25-33 pounds (male), 22-25 pounds (female)<br />
-                    <strong>Life Expectancy:</strong> 12-15 years<br />
-                    <strong>Group:</strong> Hound Group<br />
-                    <strong>Price:</strong> 39999/-
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="toast-body">Added to cart!</div>
       </div>
     </div>
-    <script>
-      // Enable Bootstrap Navbar functionality
-      var navbarToggler = document.querySelector(".navbar-toggler");
-      navbarToggler.addEventListener("click", function () {
-        var target = document.querySelector(
-          navbarToggler.getAttribute("data-bs-target")
-        );
-        if (target.classList.contains("show")) {
-          target.classList.remove("show");
-        } else {
-          target.classList.add("show");
-        }
-      });
-    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="pets.js"></script>
   </body>
 </html>

@@ -49,87 +49,9 @@
       </div>
     </nav>
     <div class="container text-center" style="margin-top: 5rem">
-      <div class="row">
-        <div class="col-lg-6 mt-3 mt-lg-0">
-          <div class="card">
-            <img src="dog.jpg" class="card-img-top img-fluid." alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a
-                href="https://www.amazon.in/Pedigree-Expert-Nutrition-Months-Onwards/dp/B077ND9486/ref=lp_22743259031_1_5"
-              >
-                <button class="btn btn-primary">Shop Now!</button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 mt-3 mt-lg-0">
-          <div class="card">
-            <img src="dogthree.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a
-                href="https://www.amazon.in/Drools-Adult-Chicken-Chunks-Pouches/dp/B0895LGTBJ/ref=lp_22743259031_1_2"
-              >
-                <button class="btn btn-primary">Shop Now!</button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 mt-3 mt-lg-0">
-          <div class="card">
-            <img src="dogtwo.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a
-                href="https://www.amazon.in/Pedigree-Expert-Nutrition-Months-Onwards/dp/B077ND9486/ref=lp_22743259031_1_5"
-              >
-                <button class="btn btn-primary">Shop Now!</button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 mt-3 mt-lg-0">
-          <div class="card">
-            <img src="dog.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a
-                href="https://www.amazon.in/Pedigree-Expert-Nutrition-Months-Onwards/dp/B077ND9486/ref=lp_22743259031_1_5"
-              >
-                <button class="btn btn-primary">Shop Now!</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="row" id="loop"></div>
     </div>
-
-    <script>
-      // Enable Bootstrap Navbar functionality
-      var navbarToggler = document.querySelector(".navbar-toggler");
-      navbarToggler.addEventListener("click", function () {
-        var target = document.querySelector(
-          navbarToggler.getAttribute("data-bs-target")
-        );
-        if (target.classList.contains("show")) {
-          target.classList.remove("show");
-        } else {
-          target.classList.add("show");
-        }
-      });
-    </script>
+    <script src="./supplies.js"></script>
+    <script src="./navbar.js"></script>
   </body>
 </html>

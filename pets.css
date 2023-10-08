@@ -14,3 +14,36 @@ body{
     max-height: 100%;
     /* Allow the card body to take up 100% of the card height */
 }
+/* CSS for the Shopping Cart Icon */
+.cart-icon {
+    position: fixed;
+    bottom:  20px;
+    right: 20px;
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.cart-count {
+    position:absolute;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    scale: .65;
+    top: -5px;
+    right: -5px;
+
+    /* margin-right: 5px; */
+}
+
+/* Example styles for the cart icon image */
+.cart-icon img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    color: white;
+}
