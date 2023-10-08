@@ -57,7 +57,7 @@ buff1.forEach((ele) => {
                     </button>
                     <button
                       class="btn btn-primary mb-2"
-                      
+                      id="add-to-cart"
                     >
                       Add To Cart
                     </button>
@@ -90,15 +90,6 @@ let cart = [
     price: "57999/-",
   },
 ];
-// const addToCartButton = card.querySelector(".btn-add-to-cart");
 
-// // Add click event listener to the "Add To Cart" button
-// addToCartButton.addEventListener("click", () => {
-//   // Push the selected item to the cart array
-//   cart.push(ele);
-
-//   // Optional: Provide user feedback (e.g., alert, toast, etc.) that the item has been added to the cart
-//   alert(`${ele.name} has been added to your cart!`);
-// });
-// let c = document.getElementsByClassName("cart-count");
-// c.textContent = cart.length;
+let c = document.getElementById("item-count");
+c.textContent = cart.length;
